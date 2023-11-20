@@ -15,7 +15,7 @@ menuInfo.routes =router.options.routes
         </nav>
       </div>
     </header>
-
+    <!-- 主应用渲染视区域 -->
     <RouterView />
     <!-- 子应用渲染区域 -->
     <div id='childApp'></div>
@@ -23,6 +23,10 @@ menuInfo.routes =router.options.routes
 </template>
 
 <style scoped>
+#childApp{
+  border:2px solid red;
+  height:500px;
+}
 nav {
   width: 100%;
   font-size: 12px;

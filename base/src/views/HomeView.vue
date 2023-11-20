@@ -3,6 +3,6 @@
 
 <template>
   <main>
-    123321
+    我是主应用的内容，红色框内是子应用
   </main>
 </template>
