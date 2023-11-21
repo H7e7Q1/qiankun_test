@@ -2,7 +2,7 @@ import Vue from 'vue'
 import App from './App.vue'
 import './public-path';
 Vue.config.productionTip = false
-
+import actions from "@/shared/actions.js"
 // let router = null;
 let instance = null;
 function render(props = {}) {
@@ -12,7 +12,10 @@ function render(props = {}) {
   //   mode: 'history',
   //   routes,
   // });
-
+  if (props) {
+    // 注入 actions 实例
+    actions.setActions(props);
+  }
   instance = new Vue({
     // router,
     render: (h) => h(App),

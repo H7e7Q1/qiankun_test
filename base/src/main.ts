@@ -16,11 +16,18 @@ const childrenApps = [
     activeRule: '/vue3-vite',
   },
   {
+    name: 'react18ViteApp',
+    entry: '//localhost:9529',
+    container: '#childApp',
+    activeRule: '/react18-vite',
+  },
+  {
     name: 'vue2WebpackApp',
     entry: '//localhost:9528',
     container: '#childApp',
     activeRule: '/vue2-webpack',
   },
+  
 ]
 registerMicroApps(childrenApps, {
   beforeLoad: [async (app: any) => console.log('beforeLoad', app)],

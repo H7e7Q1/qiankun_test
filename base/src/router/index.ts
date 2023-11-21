@@ -22,7 +22,7 @@ const router = createRouter({
 
     },
     {
-      path: '/react',
+      path: '/react18-vite',
       name: 'react',
       component: HomeView
     },

@@ -1,3 +1,4 @@
+import path from 'path'
 const { name } = require('./package');
 module.exports = {
   devServer: {
@@ -14,4 +15,12 @@ module.exports = {
       chunkLoadingGlobal: `webpackJsonp_${name}`
     },
   },
+  resolve: {
+    alias: [
+      {
+        find: '@',
+        replacement: path.resolve(__dirname, 'src')
+      }
+    ]
+  }
 };
